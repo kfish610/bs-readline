@@ -1,18 +1,29 @@
-# Basic Reason Template
+# bs-readline
 
-Hello! This project allows you to quickly get started with Reason and BuckleScript. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
+A small package for reading from node.
 
-# Build
+# Examples
+
+Read a line:
 ```
-npm run build
-```
-
-# Build + Watch
-
-```
-npm run start
+Readline.readline((in) => {
+    Js.log(in);
+});
 ```
 
+Close(release the streams):
+```
+Readline.close();
+```
 
-# Editor
-If you use `vscode`, Press `Windows + Shift + B` it will build automatically
+Read a line and then close:
+```
+Readline.readline((in) => {
+    Js.log(in);
+    Readline.close();
+});
+```
+
+# Notes
+
+When using bs-readline in your project, node will not exit until you have called `Readline.close()`

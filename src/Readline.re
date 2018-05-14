@@ -22,4 +22,4 @@ let readline = (callback) => {
 
 let close = () => {
     rl##close();
-}
+};
