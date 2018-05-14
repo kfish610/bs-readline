@@ -2,6 +2,16 @@
 
 A small package for reading from node.
 
+# Installation
+
+```
+npm install --save bs-readline
+```
+or
+```
+npm i -S bs-readline
+```
+
 # Examples
 
 Read a line:
