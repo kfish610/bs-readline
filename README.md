@@ -12,6 +12,14 @@ or
 npm i -S bs-readline
 ```
 
+Then add bs-readline to bs-dependencies in your bsconfig.json:
+```
+{
+  ...
+  "bs-dependencies": ["bs-readline"]
+}
+```
+
 # Examples
 
 Read a line:
