@@ -24,8 +24,8 @@ Then add bs-readline to bs-dependencies in your bsconfig.json:
 
 Read a line:
 ```
-Readline.readline((in) => {
-    Js.log(in);
+Readline.readline((data) => {
+    Js.log(data);
 });
 ```
 
@@ -36,8 +36,8 @@ Readline.close();
 
 Read a line and then close:
 ```
-Readline.readline((in) => {
-    Js.log(in);
+Readline.readline((data) => {
+    Js.log(data);
     Readline.close();
 });
 ```
